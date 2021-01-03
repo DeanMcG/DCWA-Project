@@ -1,0 +1,23 @@
+<button id="myButton">Home</button>
+<table border="3">
+
+    <tr>
+        <th>Country Code</th>
+        <th>Head of State</th>
+    </tr>
+
+    <% heads.forEach((head) => { %>
+        <tr>
+            <td><%= head._id %></td>
+            <td><%= head.headOfState %></td>
+        </tr>
+        <% }) %>
+
+</table>
+
+<script>
+    var button = document.getElementById('myButton');
+    button.onclick = function() {
+      location.assign('/');
+    }
+    </script>

@@ -1,0 +1,20 @@
+<button id="countriesButton">List Countries</button> <br> <br>
+<button id="citiesButton">List Cities</button> <br> <br>
+<button id="headsButton">List Heads of States</button>
+
+<script>
+    var button = document.getElementById('countriesButton');
+button.onclick = function() {
+  location.assign('/listCountries');
+}
+
+var button = document.getElementById('citiesButton');
+button.onclick = function() {
+  location.assign('/listCities');
+}
+
+var button = document.getElementById('headsButton');
+button.onclick = function() {
+  location.assign('/listHeadsOfState');
+}
+</script>

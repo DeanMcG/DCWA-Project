@@ -1,0 +1,31 @@
+<button id="myButton">Home</button>
+<table border="3">
+
+    <tr>
+        <th>City Code</th>
+        <th>Country Code</th>
+        <th>City Name</th>
+        <th>Population</th>
+        <th>By the Sea</th>
+        <th>Area</th>
+    </tr>
+
+    <% cities.forEach((city) => { %>
+        <tr>
+            <td><%= city.cty_code %></td>
+            <td><%= city.co_code %></td>
+            <td><%= city.cty_name %></td>
+            <td><%= city.population %></td>
+            <td><%= city.isCoastal %></td>
+            <td><%= city.areaKM %></td>
+        </tr>
+        <% }) %>
+
+</table>
+
+<script>
+    var button = document.getElementById('myButton');
+    button.onclick = function() {
+      location.assign('/');
+    }
+    </script>
